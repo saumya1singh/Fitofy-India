@@ -8,13 +8,24 @@
     tools:context=".ClassSectionActivity">
 
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="137dp"
+        android:layout_height="132dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="-8dp" />
+
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="class" />
+        android:hint="class"/>
 
     <EditText
         android:id="@+id/editText2"
@@ -22,7 +33,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="section" />
+        android:hint="section" />
 
     <Button
         android:id="@+id/buttonNext"

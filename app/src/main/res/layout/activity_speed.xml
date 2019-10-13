@@ -11,4 +11,59 @@
     tools:context=".SpeedActivity">
 
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView4"
+        android:layout_width="193dp"
+        android:layout_height="191dp"
+        android:src="@drawable/undraw_time_management_30iu"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="316dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/normal_text"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_height="44dp"
+        android:text=" 00:59 " />
+
+    <Button
+        android:id="@+id/buttonTimer"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="START TIMER" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="309dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="enter distance covered"
+        android:inputType="textPersonName"
+
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="338dp"
+
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Speed Of saumya is 15 m/sec" />
+
+
 </LinearLayout>

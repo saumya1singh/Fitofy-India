@@ -27,7 +27,7 @@
         android:ems="10"
         android:drawableLeft="@drawable/ic_person_black_24dp"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Student name" />
 
     <EditText
         android:id="@+id/editTextRoll"
@@ -36,7 +36,7 @@
         android:ems="10"
         android:drawableLeft="@drawable/ic_format_list_numbered_black_24dp"
         android:inputType="textPersonName"
-        android:text="Roll No." />
+        android:hint="Roll No." />
 
     <Button
         android:id="@+id/buttonReady"
