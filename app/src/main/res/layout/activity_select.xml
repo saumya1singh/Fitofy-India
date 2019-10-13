@@ -14,7 +14,7 @@
         android:id="@+id/imageView"
         android:layout_width="115dp"
         android:layout_height="108dp"
-        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+        app:srcCompat="@android:drawable/btn_radio" />
 
     <TextView
         android:id="@+id/textView"
@@ -29,14 +29,14 @@
 
     <Button
         android:id="@+id/btnOrganisation"
-        android:layout_width="249dp"
-        android:layout_marginTop="40dp"
-        android:layout_height="41dp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="@dimen/normal_text"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Organisation" />
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Organisation"
+        android:textSize="@dimen/normal_text"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnIndividual"
