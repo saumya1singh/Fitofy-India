@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectActivity">
+
+
+    <ImageView
+    android:layout_gravity="center"
+        android:id="@+id/imageView"
+        android:layout_width="115dp"
+        android:layout_height="108dp"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="186dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_size"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Login As ? " />
+
+    <Button
+        android:id="@+id/btnOrganisation"
+        android:layout_width="249dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/normal_text"
+        android:layout_gravity="center"
+        android:text="Organisation" />
+
+    <Button
+        android:id="@+id/btnIndividual"
+        android:layout_width="245dp"
+        android:textSize="@dimen/normal_text"
+        android:textStyle="bold"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Individual" />
+
+</LinearLayout>
