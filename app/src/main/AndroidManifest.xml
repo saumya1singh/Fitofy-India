@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StrenghtActivity"></activity>
+        <activity android:name=".NameRollActivity"></activity>
+        <activity android:name=".ClassSectionActivity" />
+        <activity android:name=".StrenghtActivity" />
         <activity android:name=".BalanceActivity" />
         <activity android:name=".AgilityActivity" />
         <activity android:name=".SpeedActivity" />

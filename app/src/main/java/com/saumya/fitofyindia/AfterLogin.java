@@ -26,8 +26,9 @@ public class AfterLogin extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(getBaseContext(), OrganisationMainActivity.class);
+                Intent i = new Intent(getBaseContext(), ClassSectionActivity.class);
                 startActivity(i);
+                finish();
             }
         });
 

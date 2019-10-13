@@ -29,7 +29,7 @@
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:drawableLeft="@drawable/ic_email_black_24dp"
         android:inputType="textEmailAddress"
         android:hint="E-mail" />
 
@@ -37,15 +37,16 @@
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:drawableLeft="@drawable/ic_security_black_24dp"
         android:inputType="numberPassword"
         android:text="Password" />
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="280dp"
+        android:layout_width="228dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:background="@color/colorPrimary"
         android:hint=" SIGN UP " />
 
