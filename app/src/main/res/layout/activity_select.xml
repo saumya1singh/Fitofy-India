@@ -8,13 +8,13 @@
     android:orientation="vertical"
     tools:context=".SelectActivity">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView2"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_width="133dp"
+        android:layout_height="102dp" />
 
-    <ImageView
-    android:layout_gravity="center"
-        android:id="@+id/imageView"
-        android:layout_width="115dp"
-        android:layout_height="108dp"
-        app:srcCompat="@android:drawable/btn_radio" />
 
     <TextView
         android:id="@+id/textView"
@@ -34,6 +34,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:gravity="center"
+        android:background="@color/colorPrimary"
         android:text="Organisation"
         android:textSize="@dimen/normal_text"
         android:textStyle="bold" />
@@ -42,6 +43,8 @@
         android:id="@+id/btnIndividual"
         android:layout_width="245dp"
         android:textSize="@dimen/normal_text"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
         android:textStyle="bold"
         android:layout_height="43dp"
         android:layout_gravity="center"

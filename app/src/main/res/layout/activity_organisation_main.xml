@@ -6,57 +6,212 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/lighter_gray"
     tools:context=".OrganisationMainActivity">
 
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="411dp"
+        android:layout_height="39dp"
         android:layout_gravity="center"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/black"
         android:gravity="center"
-        android:text="Organisation Name " />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-            android:layout_width="120dp"
-            android:layout_height="108dp" >
+        android:text="Organisation Name "
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
 
 
-                <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageViewAgility"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/undraw_workout_gcguu" />
 
-                    android:orientation="vertical">
-
-
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="106dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center" />
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="94dp"
-                        android:layout_height="wrap_content"
-
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Image Title"
-                        android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvAgility"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:textSize="@dimen/small_text"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Agility"
+                    android:textStyle="bold" />
 
 
-                </LinearLayout>
+            </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
 
-        </LinearLayout>
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imgSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/undraw_runner_start_x0uu" />
+
+                <TextView
+                    android:id="@+id/tvSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:textSize="@dimen/small_text"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Speed "
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageViewBalance"
+                    android:layout_width="104dp"
+                    android:layout_height="91dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/balance" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+
+                    android:textSize="@dimen/small_text"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Balance Test"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imgStrength"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/undraw_pilates_gpdb" />
+
+                <TextView
+                    android:id="@+id/tvStrength"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+
+                    android:textSize="@dimen/small_text"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Strength "
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

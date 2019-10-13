@@ -22,6 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
     String email, password;
     EditText etEmail, etPassword;
     Button btnSignUp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     if (task.isSuccessful()) {
                                         Log.d("tag", "createUserWithEmail:success");
 
-                                        Intent intent = new Intent(RegisterActivity.this, OrganisationMainActivity.class);
+                                        Intent intent = new Intent(RegisterActivity.this, AfterLogin.class);
                                         startActivity(intent);
                                         finish();
                                     } else {
@@ -60,6 +61,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     }
+
     private boolean chekvalidation() {
         boolean check = true;
         if (TextUtils.isEmpty(email)) {
