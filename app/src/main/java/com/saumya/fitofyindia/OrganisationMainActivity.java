@@ -18,7 +18,7 @@ public class OrganisationMainActivity extends AppCompatActivity {
         imageViewBalance = findViewById(R.id.imageViewBalance);
         imgStrength = findViewById(R.id.imgStrength);
 
-
+        
 
 
 

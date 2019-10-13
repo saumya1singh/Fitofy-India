@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AfterLogin"></activity>
+        <activity android:name=".StrenghtActivity"></activity>
+        <activity android:name=".BalanceActivity" />
+        <activity android:name=".AgilityActivity" />
+        <activity android:name=".SpeedActivity" />
+        <activity android:name=".AfterLogin" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".OrganisationMainActivity" />
         <activity android:name=".LoginActivity" />
