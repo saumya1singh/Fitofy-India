@@ -1,9 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".StrenghtActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="284dp"
+        android:layout_height="238dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/undraw_fitness_tracker" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="387dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/small_text"
+        android:inputType="number"
+        android:text="Total numbers in Strength Test (out of 10)" />
+
+
+</LinearLayout>
