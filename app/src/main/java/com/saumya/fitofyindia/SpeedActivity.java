@@ -12,6 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class SpeedActivity extends AppCompatActivity {
 
     MediaPlayer md;
@@ -25,6 +28,9 @@ public class SpeedActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     String organisation, className,secName,Name,Roll;
     int speed;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,12 +53,16 @@ public class SpeedActivity extends AppCompatActivity {
         Name = sharedPreferences.getString("Name",Name);
         Roll = sharedPreferences.getString("Roll", Roll);
 
+        firebaseDatabase = FirebaseDatabase.getInstance("https://fitofyindia.firebaseio.com/");
+        databaseReference = firebaseDatabase.getReference("Organisation/" + organisation);
+
+
         md = new MediaPlayer();
 
 
         speed = distance/60;
 
-        textViewSpeed.setText("Speed Of " + Name + " is " + speed + " m/sec" );
+        textViewSpeed.setText("Speed Of " + Name + " Is " + speed + " m/sec" );
 
 
         buttonStartTimer.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +98,8 @@ public class SpeedActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 distance = Integer.parseInt(editTextDistance.getText().toString());
+
+                databaseReference.child(className).child(secName).child(Roll).child("Speed").setValue(speed);
 
                 md = MediaPlayer.create(SpeedActivity.this, R.raw.whistle);
                 md.start();
