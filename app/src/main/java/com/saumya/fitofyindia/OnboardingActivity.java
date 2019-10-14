@@ -3,6 +3,7 @@ package com.saumya.fitofyindia;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.hololo.tutorial.library.TutorialActivity;
 
 
 public class OnboardingActivity extends TutorialActivity {
