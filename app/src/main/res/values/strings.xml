@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">FitofyIndia</string>
 
+    <string name="automatic_data">YOGA</string>
+    <string name="permission_title">Grant Access</string>
+    <string name="permission_detail">Give Music Player access to files</string>
+    <string name="choose_the_song">GYMING AT HOME</string>
+    <string name="edit_data">HEALTH TIPS</string>
+    <string name="result_awesome">PEDOMETER</string>
+    <string name="continue_and_learn">Yoga is a bridge that helps you connect with your soul, mind, and body. It has given tremendous benefits to every person who has practiced it regularly. From mental health to physical health may have been benefited.</string>
+    <string name="continue_and_update">There\'s something about being in a gym, sweating along with everyone else, that gives you kind of a boost.</string>
+    <string name="continue_and_result">The beauty of yoga is that it can be practiced by just about anybody irrespective of things such as age, fitness, health condition, etc. Obviously, there are a few things to be kept in mind but then which exercise does not have such confines?</string>
+    <string name="thank_you">Thank you, have fun</string>
+    <string name="gm_finds_photos">As your small changes become habit, you can continue to add more healthy choices to your diet.</string>
+    <string name="swap_to_the_tab">Exercise is so much easier when you have lots of options to choose from. If you\'re a cardio machine person, your choices abound: the treadmill, elliptical, stairclimber, stair stepper, stationary bike, rowing machine...it goes on and on. You also have options for lifting weights.</string>
+    <string name="update_easily">Every change you make to improve your diet matters. You don’t have to be perfect and you don’t have to completely eliminate foods you enjoy to have a healthy diet.</string>
+    <string name="after_updating">Daily walks are one of the most important habits you can develop, because they influence many other positive habit changes.</string>
+
+
+
 </resources>
