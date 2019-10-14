@@ -21,7 +21,7 @@
         android:id="@+id/etOrganisation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+         android:drawableLeft="@drawable/ic_home_black_24dp"
         android:inputType="textEmailAddress"
         android:hint="Organisation Name" />
 
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_security_black_24dp"
         android:inputType="numberPassword"
-        android:text="Password" />
+        android:hint="Password" />
 
     <Button
         android:id="@+id/btnSignUp"

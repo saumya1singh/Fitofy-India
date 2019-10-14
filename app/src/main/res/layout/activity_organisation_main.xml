@@ -33,7 +33,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="20dp"
             app:cardCornerRadius="6dp"
             app:cardElevation="10dp">
 
@@ -75,7 +75,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="40dp"
 
             app:cardCornerRadius="6dp"
             app:cardElevation="10dp">
@@ -126,7 +126,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="20dp"
             app:cardCornerRadius="6dp"
             app:cardElevation="10dp">
 
@@ -170,7 +170,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="40dp"
 
             app:cardCornerRadius="6dp"
             app:cardElevation="10dp">

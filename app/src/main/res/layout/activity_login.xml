@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_email_black_24dp"
         android:inputType="textEmailAddress"
-        android:text="E-mail" />
+        android:hint="E-Mail" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_security_black_24dp"
         android:inputType="numberPassword"
-        android:text="Password" />
+        android:hint="Password" />
 
     <Button
         android:id="@+id/btnLogin"

@@ -21,16 +21,16 @@
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="-8dp" />
 
-    <EditText
-        android:id="@+id/editText"
+    <Spinner
+        android:id="@+id/spinnerClass"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="39dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="class"/>
+        android:hint="class"
+        android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/editText2"
+    <Spinner
+        android:id="@+id/spinnerSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
