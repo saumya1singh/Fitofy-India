@@ -20,7 +20,8 @@
         <activity android:name=".OrganisationMainActivity" />
         <activity android:name=".LoginActivity" />
 
-        <activity android:name=".SplashActivity">
+        <activity android:name=".SplashActivity"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
 
 
             <intent-filter>
