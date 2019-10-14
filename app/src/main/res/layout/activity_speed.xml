@@ -15,8 +15,8 @@
         android:id="@+id/imageView4"
         android:layout_width="193dp"
         android:layout_height="191dp"
-        android:src="@drawable/undraw_time_management_30iu"
-        android:scaleType="fitCenter"
+        android:src="@drawable/undraw_time_management_iu"
+
         android:layout_gravity="center" />
 
     <TextView
@@ -51,20 +51,20 @@
         android:text="STOP TIMER" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextDistance"
         android:layout_width="309dp"
         android:layout_height="51dp"
         android:layout_gravity="center"
         android:ems="10"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:hint="enter distance covered"
-        android:inputType="textPersonName"
+        android:hint="enter distance covered (in meters)"
+        android:inputType="number"
 
         />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewSpeed"
         android:layout_width="338dp"
 
         android:layout_height="48dp"
@@ -72,6 +72,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:textStyle="bold"
+        android:textSize="@dimen/normal_text"
         android:fontFamily="@font/open_sans_semibold"
         android:text="Speed Of saumya is 15 m/sec" />
 

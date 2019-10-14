@@ -10,11 +10,10 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
-        android:layout_width="137dp"
-        android:layout_height="132dp"
-        android:src="@drawable/logo"
+        android:layout_width="170dp"
+        android:layout_height="153dp"
         android:layout_gravity="center"
-
+        android:src="@drawable/logo"
 
 
         app:srcCompat="@drawable/logo"
@@ -23,28 +22,35 @@
 
     <Spinner
         android:id="@+id/spinnerClass"
-        android:layout_width="match_parent"
-        android:layout_height="39dp"
+        android:layout_width="317dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:ems="10"
+        android:gravity="center"
+
         android:hint="class"
         android:inputType="textPersonName" />
 
     <Spinner
         android:id="@+id/spinnerSection"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="317dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="section" />
+        android:gravity="center"
+        android:hint="section"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/buttonNext"
-        android:layout_width="230dp"
+        android:layout_width="159dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:textSize="@dimen/small_text"
+        android:textStyle="bold"
         android:background="@color/colorPrimary"
         android:gravity="center"
-        android:text="next" />
+        android:text="next"
+        android:textSize="@dimen/small_text" />
 </LinearLayout>

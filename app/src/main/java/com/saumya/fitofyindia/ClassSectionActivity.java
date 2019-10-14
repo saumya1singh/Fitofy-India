@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -40,12 +41,12 @@ public class ClassSectionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_section);
+
         buttonNext = findViewById(R.id.buttonNext);
         spinnerClass=findViewById(R.id.spinnerClass);
         spinnerSec=findViewById(R.id.spinnerSection);
 
         sharedPreferences = getSharedPreferences("Organisation", Context.MODE_PRIVATE);
-
         organisation = sharedPreferences.getString("OrgName", organisation);
 
         firebaseDatabase = FirebaseDatabase.getInstance("https://fitofyindia.firebaseio.com/");
@@ -65,17 +66,13 @@ public class ClassSectionActivity extends AppCompatActivity {
         ClassList.add("10");
         ClassList.add("11");
         ClassList.add("12");
+        SecList.add("Select Section");
         SecList.add("A");
         SecList.add("B");
         SecList.add("C");
         SecList.add("D");
 
 
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        //editor.putString("OrgName", className);
-        editor.putString("Class", className);
-        editor.putString("Section", secName);
-        editor.apply();
 
         ArrayAdapter<String> dataClassAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,ClassList );
         ArrayAdapter<String> dataSecAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, SecList);
@@ -114,6 +111,15 @@ public class ClassSectionActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(validation()) {
+
+                    Log.e("check sec class", "onClick: " + className + secName );
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    //editor.putString("OrgName", className);
+                    editor.putString("Class", className);
+                    editor.putString("Section", secName);
+                    editor.apply();
+
+
                     Intent i = new Intent(getBaseContext(), NameRollActivity.class);
 
                     i.putExtra("class", className);
@@ -125,9 +131,6 @@ public class ClassSectionActivity extends AppCompatActivity {
 
             }
         });
-
-        databaseReference.child(className);
-        databaseReference.child(className).child(secName);
 
     }
 

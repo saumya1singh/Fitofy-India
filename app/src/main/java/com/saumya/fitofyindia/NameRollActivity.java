@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,12 +35,12 @@ public class NameRollActivity extends AppCompatActivity {
         editTextRoll = findViewById(R.id.editTextRoll);
         buttonReady = findViewById(R.id.buttonReady);
 
-        className = getIntent().getExtras().getString("class");
-        secName = getIntent().getExtras().getString("section");
 
         sharedPreferences = getSharedPreferences("Organisation", Context.MODE_PRIVATE);
-
         organisation = sharedPreferences.getString("OrgName", organisation);
+        className = sharedPreferences.getString("Class", className);
+        secName = sharedPreferences.getString("Section", secName);
+        Log.e("Organisation", "onCreate: " + className + secName + organisation );
 
         firebaseDatabase = FirebaseDatabase.getInstance("https://fitofyindia.firebaseio.com/");
         databaseReference = firebaseDatabase.getReference("Organisation/" + organisation);
@@ -54,16 +55,24 @@ public class NameRollActivity extends AppCompatActivity {
                 Name = editTextName.getText().toString();
                 Roll = editTextName.getText().toString();
 
-                databaseReference.child(className).child(secName).child(Roll);
+                databaseReference.child(className).child(secName).child(Roll).setValue("");
+
+
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                //editor.putString("OrgName", className);
+                editor.putString("Name", Name);
+                editor.putString("Roll", Roll);
+                editor.apply();
 
 
                 Intent i = new Intent(getBaseContext(), OrganisationMainActivity.class);
                 startActivity(i);
-
                 finish();
 
             }
         });
+
+
 
 
     }

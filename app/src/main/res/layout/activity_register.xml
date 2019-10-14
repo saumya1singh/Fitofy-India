@@ -11,15 +11,16 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView2"
+        android:layout_width="189dp"
+        android:layout_height="162dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo"
-        android:layout_width="133dp"
-        android:layout_height="102dp" />
+        android:src="@drawable/logo" />
 
 
     <EditText
         android:id="@+id/etOrganisation"
         android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
          android:drawableLeft="@drawable/ic_home_black_24dp"
         android:inputType="textEmailAddress"
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_security_black_24dp"
         android:inputType="numberPassword"
-        android:hint="Password" />
+        android:hint="Password (*more than 6 digits)" />
 
     <Button
         android:id="@+id/btnSignUp"

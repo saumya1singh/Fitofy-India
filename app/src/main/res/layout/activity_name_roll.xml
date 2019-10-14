@@ -11,10 +11,10 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
-        android:layout_width="137dp"
-        android:layout_height="132dp"
-        android:src="@drawable/logo"
+        android:layout_width="165dp"
+        android:layout_height="161dp"
         android:layout_gravity="center"
+        android:src="@drawable/logo"
 
         app:srcCompat="@drawable/logo"
         tools:layout_editor_absoluteX="158dp"
@@ -22,21 +22,26 @@
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/ic_person_black_24dp"
-        android:inputType="textPersonName"
-        android:hint="Student name" />
+        android:ems="10"
+        android:gravity=""
+        android:hint="Student name"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editTextRoll"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_gravity="center"
+
         android:drawableLeft="@drawable/ic_format_list_numbered_black_24dp"
-        android:inputType="textPersonName"
-        android:hint="Roll No." />
+        android:ems="10"
+        android:hint="Roll No."
+        android:inputType="number" />
 
     <Button
         android:id="@+id/buttonReady"
