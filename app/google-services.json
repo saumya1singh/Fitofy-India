@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "220513388376",
+    "firebase_url": "https://fitofyindia.firebaseio.com",
+    "project_id": "fitofyindia",
+    "storage_bucket": "fitofyindia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220513388376:android:ee4e4fd2db6ebe5d1a472d",
+        "android_client_info": {
+          "package_name": "com.saumya.fitofyindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220513388376-iujdg1v19m7m49i1110b75062m5uv5ks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saumya.fitofyindia",
+            "certificate_hash": "8cff96e5e8b61cd5acff0d1e0f3e7268c2dda4a2"
+          }
+        },
+        {
+          "client_id": "220513388376-152sud198mfupmgs6oettlqa1nituh88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARfhs8gXIo8WJHaHdiEA8LxrEqfDfD_XA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220513388376-152sud198mfupmgs6oettlqa1nituh88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
