@@ -1,8 +1,10 @@
 package com.saumya.fitofyindia;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.hololo.tutorial.library.Step;
 import com.hololo.tutorial.library.TutorialActivity;
 
 
@@ -48,6 +50,11 @@ public class OnboardingActivity extends TutorialActivity {
     }
     @Override
     public void finishTutorial() {
+
+
+        Intent i = new Intent(getBaseContext(), SelectActivity.class);
+        startActivity(i);
+        finish();
         //Toast.makeText(this, "Tutorial finished", Toast.LENGTH_SHORT).show();
         //finish();
     }
