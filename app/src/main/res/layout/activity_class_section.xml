@@ -10,8 +10,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
-        android:layout_width="170dp"
-        android:layout_height="153dp"
+        android:layout_width="172dp"
+        android:layout_height="164dp"
         android:layout_gravity="center"
         android:src="@drawable/logo"
 

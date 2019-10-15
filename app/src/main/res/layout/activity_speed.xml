@@ -13,11 +13,10 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView4"
-        android:layout_width="193dp"
-        android:layout_height="191dp"
-        android:src="@drawable/undraw_time_management_iu"
-
-        android:layout_gravity="center" />
+        android:layout_width="196dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:src="@drawable/undraw_time_management_iu" />
 
     <TextView
         android:id="@+id/textViewTimer"

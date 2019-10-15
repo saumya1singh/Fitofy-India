@@ -21,6 +21,7 @@ public class OrganisationMainActivity extends AppCompatActivity {
         imageViewBalance = findViewById(R.id.imageViewBalance);
         imgStrength = findViewById(R.id.imgStrength);
 
+
         imgSpeed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,6 +33,40 @@ public class OrganisationMainActivity extends AppCompatActivity {
             }
         });
 
+
+        imageViewAgility.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Intent i = new Intent(getBaseContext(), AgilityActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        imageViewBalance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Intent i = new Intent(getBaseContext(), BalanceActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+
+        imgStrength.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Intent i = new Intent(getBaseContext(), StrenghtActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
 
 
