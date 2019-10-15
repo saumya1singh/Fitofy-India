@@ -43,6 +43,7 @@
         <activity android:name=".Excercise" />
         <activity android:name=".Healthactivity" />
         <activity android:name=".Healthtip" />
+        <activity android:name=".CounterActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

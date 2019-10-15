@@ -41,6 +41,9 @@ public class IndividualMain extends AppCompatActivity {
         llpedo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent  intent= new Intent(getBaseContext(),CounterActivity.class);
+                startActivity(intent);
+
 
             }
         });
