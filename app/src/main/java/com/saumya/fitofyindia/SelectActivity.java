@@ -27,6 +27,14 @@ public class SelectActivity extends AppCompatActivity {
                 finish();
             }
         });
+        btnIndividual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getBaseContext(), LoginIndividual.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
 
 

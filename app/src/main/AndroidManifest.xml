@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NameRollActivity"></activity>
+        <activity android:name=".VerificationActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+        <activity
+            android:name=".LoginIndividual"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".NameRollActivity" />
         <activity android:name=".ClassSectionActivity" />
         <activity android:name=".StrenghtActivity" />
         <activity android:name=".BalanceActivity" />
@@ -19,24 +24,17 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".OrganisationMainActivity" />
         <activity android:name=".LoginActivity" />
-
-        <activity android:name=".SplashActivity"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
-
-
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".SelectActivity">
-
-        </activity>
-        <activity android:name=".OnboardingActivity">
-
-        </activity>
+        <activity android:name=".SelectActivity" />
+        <activity android:name=".OnboardingActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
