@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Healthactivity"
+    android:padding="10dp">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:id="@+id/linearlayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+               >
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/health_tips"
+                    android:layout_width="345dp"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="9dp"
+                    app:cardElevation="8dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="health_tips"
+                    tools:ignore="OnClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFBD080"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="345dp"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+                            android:src="@drawable/healthtips" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="HEALTH TIPS"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                >
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/weight_loss"
+                    android:layout_width="345dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="9dp"
+                    app:cardElevation="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="weight_loss"
+                    tools:ignore="OnClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FF33E864"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="345dp"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+                            android:src="@drawable/wtloss" />
+
+                        <TextView
+                            android:layout_width="350dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="WEIGHT LOSS/GAIN"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                >
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/excersise"
+                    android:layout_width="345dp"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="9dp"
+                    app:cardElevation="8dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="excercise"
+                    tools:ignore="OnClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFF2C226"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="345dp"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+                            android:src="@drawable/excercise" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="EXCERCISE"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                >
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/beauty_tip"
+                    android:layout_width="345dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="9dp"
+                    app:cardElevation="8dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="beauty_tip"
+                    tools:ignore="OnClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFF84F74"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="345dp"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+                            android:src="@drawable/beautytip" />
+
+                        <TextView
+                            android:layout_width="350dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="BEAUTY TIPS"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                >
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/general"
+                    android:layout_width="345dp"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="9dp"
+                    app:cardElevation="8dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="general"
+                    tools:ignore="OnClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/design_default_color_primary_dark"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="345dp"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+                            android:src="@drawable/general" />
+
+                        <TextView
+                            android:layout_width="350dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="GENERAL"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

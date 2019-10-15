@@ -111,10 +111,10 @@ public class VerificationActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-//                            Intent intent = new Intent(VerificationActivity.this, HomeActivity.class);
-//                            intent.putExtra("name",name);
-//                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                            startActivity(intent);
+                            Intent intent = new Intent(VerificationActivity.this, IndividualMain.class);
+                            intent.putExtra("name",name);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                         startActivity(intent);
 
                         } else {
 

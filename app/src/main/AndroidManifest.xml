@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VerificationActivity"
+        <activity android:name=".IndividualMain"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+        <activity
+            android:name=".VerificationActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".LoginIndividual"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
@@ -35,6 +38,11 @@
         </activity>
         <activity android:name=".SelectActivity" />
         <activity android:name=".OnboardingActivity" />
+        <activity android:name=".General" />
+        <activity android:name=".Beauty_tip" />
+        <activity android:name=".Excercise" />
+        <activity android:name=".Healthactivity" />
+        <activity android:name=".Healthtip" />
 
         <meta-data
             android:name="preloaded_fonts"

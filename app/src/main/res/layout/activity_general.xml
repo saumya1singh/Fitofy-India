@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".General">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+
+        android:layout_width="350dp"
+        android:layout_height="155dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="9dp"
+        app:cardElevation="8dp"
+        android:id="@+id/health_tips4"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#FB6917"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/a11" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="fall asleep in two minute"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+
+        android:layout_width="350dp"
+        android:layout_height="155dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="9dp"
+        app:cardElevation="8dp"
+        android:id="@+id/health_tips1"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#FB6917"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/a2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="product that can help your body get rid of unpleasent "
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        app:cardCornerRadius="9dp"
+        app:cardElevation="8dp"
+        android:layout_width="350dp"
+        android:layout_height="155dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+
+        android:id="@+id/health_tips2"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#FB6917"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/a3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="apply appropriate products on your skin"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+
+
+
+
+</LinearLayout>
