@@ -24,7 +24,7 @@
         android:layout_height="2dp"
 
         android:layout_gravity="center"
-        android:layout_marginRight="20dp"
+        android:layout_margin="20dp"
         android:background="#ffffff"
         />
 
@@ -52,6 +52,7 @@
         android:layout_marginTop="30dp"
         android:layout_height="wrap_content"
         android:text="Submit"
+        android:background="@drawable/bgbtn"
         android:id="@+id/btnSubmit"
         android:layout_gravity="center_horizontal"
         />

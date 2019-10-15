@@ -13,10 +13,9 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView4"
-        android:layout_width="188dp"
-        android:layout_height="164dp"
+        android:layout_width="196dp"
+        android:layout_height="184dp"
         android:layout_gravity="center"
-
         android:src="@drawable/undraw_time_management_iu" />
 
     <TextView
@@ -58,16 +57,36 @@
         android:ems="10"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:hint="Enter total no. of crunches "
+        android:hint="enter distance covered (in meters)"
+        android:inputType="number"
+
+        />
+    <EditText
+        android:id="@+id/editTextObstracle"
+        android:layout_width="309dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="No. of obstracles"
         android:inputType="number"
 
         />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/undraw_healthy_habit_bhw" />
+    <TextView
+        android:id="@+id/textViewSpeed"
+        android:layout_width="338dp"
+
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/normal_text"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Speed Of saumya is 15 m/sec" />
+
 
 
 </LinearLayout>

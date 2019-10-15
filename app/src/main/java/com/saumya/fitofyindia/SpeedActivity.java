@@ -2,15 +2,20 @@ package com.saumya.fitofyindia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
+import android.os.Message;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -20,16 +25,51 @@ public class SpeedActivity extends AppCompatActivity {
     MediaPlayer md;
     TextView textViewTimer;
     Button buttonStartTimer,buttonStopTimer;
-    CountDownTimer cd;
 
     EditText editTextDistance;
-    int distance ;
+    Long distance ;
+    String distString;
     TextView textViewSpeed;
     SharedPreferences sharedPreferences;
     String organisation, className,secName,Name,Roll;
-    int speed;
+    Long speed;
+    Long time ;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
+    final int MSG_START_TIMER = 0;
+    final int MSG_STOP_TIMER = 1;
+    final int MSG_UPDATE_TIMER = 2;
+
+    Stopwatch timer = new Stopwatch();
+    final int REFRESH_RATE = 100;
+
+    @SuppressLint("HandlerLeak")
+    Handler mHandler = new Handler()
+    {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case MSG_START_TIMER:
+                    timer.start(); //start timer
+                    mHandler.sendEmptyMessage(MSG_UPDATE_TIMER);
+                    break;
+
+                case MSG_UPDATE_TIMER:
+                    textViewTimer.setText(""+ timer.getElapsedTimeSecs());
+                    mHandler.sendEmptyMessageDelayed(MSG_UPDATE_TIMER,REFRESH_RATE); //text view is updated every second,
+                    break;                                  //though the timer is still running
+                case MSG_STOP_TIMER:
+                    mHandler.removeMessages(MSG_UPDATE_TIMER); // no more updates.
+                    timer.stop();//stop timer
+                    textViewTimer.setText(""+ timer.getElapsedTimeSecs());
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    };
 
 
     @Override
@@ -58,37 +98,22 @@ public class SpeedActivity extends AppCompatActivity {
 
 
         md = new MediaPlayer();
-
-
-        speed = distance/60;
-
-        textViewSpeed.setText("Speed Of " + Name + " Is " + speed + " m/sec" );
-
-
+        textViewSpeed.setVisibility(View.GONE);
         buttonStartTimer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                distString=editTextDistance.getText().toString();
 
+                if(checkValid()){
+                     md = MediaPlayer.create(SpeedActivity.this, R.raw.whistle);
+                     md.start();
 
-                md = MediaPlayer.create(SpeedActivity.this, R.raw.whistle);
-                md.start();
+                    mHandler.sendEmptyMessage(MSG_START_TIMER);
+                    buttonStartTimer.setVisibility(View.GONE);
+                    buttonStopTimer.setVisibility(View.VISIBLE);
 
-                cd = new CountDownTimer(60000, 1000) {
+                }
 
-                    @Override
-                    public void onTick(long millisUntilFinished) {
-
-                        textViewTimer.setText(""+millisUntilFinished);
-                    }
-
-                    @Override
-                    public void onFinish() {
-
-                    }
-                };
-
-                cd.start();
-                buttonStartTimer.setVisibility(View.GONE);
 
             }
         });
@@ -97,15 +122,34 @@ public class SpeedActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                distance = Integer.parseInt(editTextDistance.getText().toString());
+               Integer.parseInt(distString);
 
-                databaseReference.child(className).child(secName).child(Roll).child("Speed").setValue(speed);
+                distance = Long.parseLong(distString);
+
 
                 md = MediaPlayer.create(SpeedActivity.this, R.raw.whistle);
                 md.start();
-                cd.cancel();
+                mHandler.sendEmptyMessage(MSG_STOP_TIMER);
+                time=Long.parseLong(textViewTimer.getText().toString());
+                speed=distance/time;
+
+           databaseReference.child(className).child(secName).child(Roll).child("Speed").setValue(speed);
+                textViewSpeed.setVisibility(View.VISIBLE);
+              textViewSpeed.setText("Speed Of " + Name + " Is " + speed + " m/sec" );
+                buttonStopTimer.setVisibility(View.GONE);
+                buttonStartTimer.setVisibility(View.VISIBLE);
             }
         });
 
+    }
+    private boolean checkValid() {
+        Boolean check =true;
+        if(TextUtils.isEmpty(distString))
+        {
+            editTextDistance.setError("Required");
+            check=false;
+        }
+
+        return check;
     }
 }
