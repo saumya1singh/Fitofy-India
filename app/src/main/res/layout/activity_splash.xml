@@ -30,7 +30,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="40dp"
         android:lineSpacingExtra="6dp"
-        android:text="FITNESS \n IS NOT A \nDESTINATION \n IT IS A WAY \n OF LIFE"
+        android:text="FITNESS \nIS NOT A \nDESTINATION \nIT IS A WAY \nOF LIFE"
         android:textColor="#FFF"
         android:textSize="42sp"
         app:layout_constraintStart_toStartOf="parent"

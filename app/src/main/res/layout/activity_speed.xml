@@ -11,16 +11,18 @@
     tools:context=".SpeedActivity">
 
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageView4"
-        android:layout_width="196dp"
-        android:layout_height="184dp"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="206dp"
+        android:layout_height="119dp"
         android:layout_gravity="center"
-        android:src="@drawable/undraw_time_management_iu" />
+
+        app:srcCompat="@drawable/time_management_iu" />
 
     <TextView
         android:id="@+id/textViewTimer"
         android:layout_width="316dp"
+        android:layout_marginTop="40dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="@dimen/normal_text"

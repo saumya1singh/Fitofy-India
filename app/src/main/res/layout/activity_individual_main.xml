@@ -8,6 +8,36 @@
 
     android:layout_height="match_parent"
     tools:context=".IndividualMain">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_menu_black_24dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="FITOFY"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"></TextView>
+<ImageView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"></ImageView>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="140dp"
@@ -199,5 +229,6 @@
 
 
     </LinearLayout>
+
 
 </LinearLayout>
