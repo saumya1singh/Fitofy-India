@@ -15,6 +15,15 @@
     <string name="swap_to_the_tab">Exercise is so much easier when you have lots of options to choose from. If you\'re a cardio machine person, your choices abound: the treadmill, elliptical, stairclimber, stair stepper, stationary bike, rowing machine...it goes on and on. You also have options for lifting weights.</string>
     <string name="update_easily">Every change you make to improve your diet matters. You don’t have to be perfect and you don’t have to completely eliminate foods you enjoy to have a healthy diet.</string>
     <string name="after_updating">Daily walks are one of the most important habits you can develop, because they influence many other positive habit changes.</string>
+    <string name="title_activity_yoga_work_out">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 
 </resources>

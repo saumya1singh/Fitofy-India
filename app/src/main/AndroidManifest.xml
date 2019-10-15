@@ -9,8 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".IndividualMain"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+        <activity android:name=".YogaStartWork_2nd"></activity>
+        <activity android:name=".YogaStartWork" />
+        <activity android:name=".YogaWorkOut" />
+        <activity
+            android:name=".ui.login.YogaWorkOut"
+            android:label="@string/title_activity_yoga_work_out" />
+        <activity android:name=".YogaActivity" />
+        <activity
+            android:name=".IndividualMain"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".VerificationActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />

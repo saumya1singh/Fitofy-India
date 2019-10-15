@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 
 public class IndividualMain extends AppCompatActivity {
  LinearLayout llyog , llgym,llhealth, llpedo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,13 +22,16 @@ public class IndividualMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Intent  intent= new Intent(getBaseContext(),YogaActivity.class);
+                startActivity(intent);
+
             }
         });
-        llpedo.setOnClickListener(new View.OnClickListener() {
+        llgym.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
-
+            public void onClick(View v) {
+                Intent  intent= new Intent(getBaseContext(),Healthactivity.class);
+                startActivity(intent);
             }
         });
         llhealth.setOnClickListener(new View.OnClickListener() {
