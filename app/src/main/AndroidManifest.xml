@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo"
+        android:icon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:hardwareAccelerated="false"
@@ -51,12 +51,28 @@
         </activity>
         <activity android:name=".SelectActivity" />
         <activity android:name=".OnboardingActivity" />
-        <activity android:name=".General" />
-        <activity android:name=".Beauty_tip" />
-        <activity android:name=".Excercise" />
-        <activity android:name=".Healthactivity" />
-        <activity android:name=".Healthtip" />
-        <activity android:name=".CounterActivity" />
+        <activity android:name=".General"
+         />
+        <activity android:name=".Beauty_tip"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Excercise"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Healthactivity"
+        android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".Healthtip"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".CounterActivity"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".GymMainActivity"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".GymEditWorkAct"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".GymStartWorkAct"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".GymStartWorkAct_2nd"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".GymWorkoutAct"
+        android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
         <meta-data
             android:name="preloaded_fonts"

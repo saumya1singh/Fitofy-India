@@ -30,7 +30,7 @@ public class IndividualMain extends AppCompatActivity {
         llgym.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent  intent= new Intent(getBaseContext(),Healthactivity.class);
+                Intent  intent= new Intent(getBaseContext(),GymMainActivity.class);
                 startActivity(intent);
             }
         });
