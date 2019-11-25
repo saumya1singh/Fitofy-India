@@ -1,6 +1,7 @@
 # Fitofy-India
 An android application for a Healthy and Fit Nation . </br>
-Video of running Application is [here](https://drive.google.com/open?id=1EDsmbbfC6vOWWcHLmBkHyuT21jcMMv-t)
+Want to see video of running Application ? </br>
+Click here : https://drive.google.com/open?id=1EDsmbbfC6vOWWcHLmBkHyuT21jcMMv-t
 
 # Setting up the project
 Step 1 : Fork, Clone and Remote </br>
