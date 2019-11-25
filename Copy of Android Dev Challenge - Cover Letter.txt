@@ -1,0 +1,59 @@
+﻿Tell us what your idea is. 
+________________
+
+
+#Motivation :
+ In 21st century , people believe that technological innovation is prominent cause of stressful lives, inactive lifestyle and unfit society.I will use technology specially Machine Learning to make the society and the entire world Healthier and Fit . “Healthy mind resides in a healthy body and exercises are must for good health” .
+#IDEA :
+My idea is to build an android application in which along with several interesting features for user benefit I will implement “GYM AT HOME” feature . Now what’s interesting about this feature is that it will make the application behave like a GYM trainer or instructor for the users. 
+“If you are a user of the application and you are doing your daily exercise keeping  phone in front of you using the video provided in the app and you make some error while performing exercise then the app will popup notification . It will warn you to do the exercise in this way and not in that way .” 
+This can surely open up a world of helpful innovation.
+# Integrating Machine Learning : 
+Here, I am using on-device machine learning to provide the user Fitness Trainer at home .   This feature will help users save lots of money and time since in “Gym At Home” part we will implement “ Real Time Object Detection using TensorFlow  or Firebase ML kit” for detecting the errors the user makes while performing sports and yoga exercises . App will help the user like a trainer .
+
+
+
+
+
+
+
+
+Tell us how you plan on bringing it to life. 
+________________
+
+
+Project Link : https://github.com/SaumyaSingh1/Fitofy-India
+My idea is to build an android application in which along with several interesting features for user benefit I will implement “GYM AT HOME” feature . Now what’s interesting about this feature is that it will make the application behave like a GYM trainer or instructor for the users. Here, I am using on-device machine learning to provide the user Fitness Trainer at home .
+Other Features of the application are :  Health Tips , Pedometer , BMI , Yoga training.
+Pedometer : I will use Sensors for implementing pedometer . Even if the app  would be closed then also number of steps made by user will be counted . The App will show the user how many calories user is burning every week . It will keep notifying the user amount calories you burn !  Rewards : We will provide some rewards like Discount Coupons to our registered users who will have covered maximum number of steps to encourage them .I have put all the health related features combiningly in the app i.e from BMI calculator to Gym at home which behave like a Gym Trainer .
+Ways i will take Google’s help : Use Tensorflow Lite and Firebase ML kit .
+You can check application video here: https://drive.google.com/open?id=1EDsmbbfC6vOWWcHLmBkHyuT21jcMMv-t
+The application is almost ready . I have to integrate Firebase ML kit in this to enhance the “GYM AT HOME” feature to provide Fitness Trainer to our app’s user. 
+
+
+
+
+
+
+
+
+
+
+
+
+Tell us about you. 
+________________
+ 
+ My name Saumya Singh , a full stack Android Developer and ML enthusiasts . I am also     Google Code In Mentor’19 and Google Action Developer .  
+I have done several projects using Android and few using ML also .
+
+
+Project 1 : 
+Worked   on   an   app  which   is   now   live   on   playstore   with   500   +   downloads . This application is for making lives of students and PG/Hostel managers easy .
+  Link   1:   https://play.google.com/store/apps/details?id=net.eazypg.e azypgmanager&hl=en   
+  Link   2:   https://play.google.com/store/apps/details?id=net.eazypg.e azypgstaﬀ&hl=en   
+
+
+ My portfolio  : https://saumyasingh1.github.i o/Saumya-Singh/# 
+ GITHUB :   https://github.com/SaumyaSingh1
+ LinkedIn: https://www.linkedin.com/in/s aumya-singh-558587137/
