@@ -20,7 +20,8 @@ Step 2 : Open project in Android Studio
 
 
 # Contributing
-Get started with this simple and easy to follow project , it doesn't matter if you are a beginner or a pro in android , open source ! We are always here to help you out and get started .</br>
+Get started with this simple and easy to follow project , it doesn't matter if you are a beginner or a pro in android , open source !
+We are always here to help you out and get started . </br>
 Please read our Contributing guidelines [here](https://github.com/SaumyaSingh1/Fitofy-India/blob/master/CONTRIBUTING.md) to get started 💯
 
 # Contact
