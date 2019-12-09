@@ -11,12 +11,15 @@ Step 2 : Open project in Android Studio
 
 # Here are some screenshots of the application
 
-![Picture1 (2)](https://user-images.githubusercontent.com/46818757/69555788-bc498780-0fc9-11ea-90dd-607153545e01.png)
-![Picture2 (2)](https://user-images.githubusercontent.com/46818757/69555841-d08d8480-0fc9-11ea-8980-f583356f8346.png)
-![Picture3 (2)](https://user-images.githubusercontent.com/46818757/69555856-d5eacf00-0fc9-11ea-9f27-7244da771395.png)
-![Picture4 (2)](https://user-images.githubusercontent.com/46818757/69555891-df743700-0fc9-11ea-8c77-3e047e550b07.png)
-![Picture5 (2)](https://user-images.githubusercontent.com/46818757/69555903-e3a05480-0fc9-11ea-87b4-241b0e210c1e.png)
-![Picture6 (2)](https://user-images.githubusercontent.com/46818757/69555910-e8650880-0fc9-11ea-9945-070633fd7098.png)
+<picture><img width="250" alt="Screenshot 2019-12-09 at 8 58 27 PM" src="https://user-images.githubusercontent.com/43576162/70468391-03b53500-1aed-11ea-940c-6f3ab3d3df13.png">
+<img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/43576162/70468402-09127f80-1aed-11ea-9ba8-a3b4989a4fff.png">
+<img width="250" alt="Screenshot 2019-12-09 at 8 59 44 PM" src="https://user-images.githubusercontent.com/43576162/70468420-129be780-1aed-11ea-9b80-866891812ea1.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 00 25 PM" src="https://user-images.githubusercontent.com/43576162/70468435-1a5b8c00-1aed-11ea-8661-8baf648344e5.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 00 42 PM" src="https://user-images.githubusercontent.com/43576162/70468452-20516d00-1aed-11ea-8a2b-1a6007ffcd86.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 02 08 PM" src="https://user-images.githubusercontent.com/43576162/70468473-26dfe480-1aed-11ea-87a2-f600d068a849.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 02 32 PM" src="https://user-images.githubusercontent.com/43576162/70468479-2ba49880-1aed-11ea-9092-12d524a31bc2.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 36 03 PM" src="https://user-images.githubusercontent.com/43576162/70468493-32331000-1aed-11ea-9072-87af58832124.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 44 48 PM" src="https://user-images.githubusercontent.com/43576162/70468508-37905a80-1aed-11ea-859b-efe814c16fd8.png">
 
 
 # Contributing
