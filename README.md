@@ -10,13 +10,20 @@ Step 2 : Open project in Android Studio
 [Read this](https://medium.com/@singhsaumyas150/contribute-to-open-source-using-git-dd918f81e1ba) to get started 🎉 
 
 # Here are some screenshots of the application
+<img width="250" alt="Screenshot 2019-12-09 at 8 58 27 PM" src="https://user-images.githubusercontent.com/43576162/70451279-1585e080-1acb-11ea-8660-34c953ae89b6.png">
+<img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/43576162/70451492-79100e00-1acb-11ea-9c46-b39b552054ba.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 36 03 PM" src="https://user-images.githubusercontent.com/43576162/70451770-f5a2ec80-1acb-11ea-851c-11879d193ff8.png">
+<img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/43576162/70451853-2551f480-1acc-11ea-8b9f-53770795529d.png">
+<img width="250" alt="Screenshot 2019-12-09 at 8 59 08 PM" src="https://user-images.githubusercontent.com/43576162/70451913-40246900-1acc-11ea-88c0-961f6f8806af.png">
+<img width="250" alt="Screenshot 2019-12-09 at 8 59 44 PM" src="https://user-images.githubusercontent.com/43576162/70451925-44508680-1acc-11ea-9509-6827642c2763.png">
+<img width="250" alt="Screenshot 2019-12-09 at 8 59 08 PM" src="https://user-images.githubusercontent.com/43576162/70452577-5bdc3f00-1acd-11ea-9665-9368082bcff2.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 00 25 PM" src="https://user-images.githubusercontent.com/43576162/70451972-57635680-1acc-11ea-93c2-c394eed84223.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 00 42 PM" src="https://user-images.githubusercontent.com/43576162/70451975-592d1a00-1acc-11ea-8b4a-4711e6e5eb98.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 02 08 PM" src="https://user-images.githubusercontent.com/43576162/70451980-5b8f7400-1acc-11ea-95f1-0383a2e670ff.png">
+<img width="250" alt="Screenshot 2019-12-09 at 9 02 32 PM" src="https://user-images.githubusercontent.com/43576162/70451982-5df1ce00-1acc-11ea-86d6-28a181589392.png">
 
-![Picture1 (2)](https://user-images.githubusercontent.com/46818757/69555788-bc498780-0fc9-11ea-90dd-607153545e01.png)
-![Picture2 (2)](https://user-images.githubusercontent.com/46818757/69555841-d08d8480-0fc9-11ea-8980-f583356f8346.png)
-![Picture3 (2)](https://user-images.githubusercontent.com/46818757/69555856-d5eacf00-0fc9-11ea-9f27-7244da771395.png)
-![Picture4 (2)](https://user-images.githubusercontent.com/46818757/69555891-df743700-0fc9-11ea-8c77-3e047e550b07.png)
-![Picture5 (2)](https://user-images.githubusercontent.com/46818757/69555903-e3a05480-0fc9-11ea-87b4-241b0e210c1e.png)
-![Picture6 (2)](https://user-images.githubusercontent.com/46818757/69555910-e8650880-0fc9-11ea-9945-070633fd7098.png)
+
+
 
 
 # Contributing
