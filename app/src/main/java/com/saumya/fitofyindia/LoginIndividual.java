@@ -34,9 +34,8 @@ public class LoginIndividual extends AppCompatActivity {
                 if(checkValid())
                 {
                     phonenumber="+91"+phonenumber;
-                    Intent intent = new Intent(LoginIndividual.this, VerificationActivity.class);
-                    intent.putExtra("mobile",phonenumber);
-                    intent.putExtra("name",name);
+                    Intent intent = new Intent(LoginIndividual.this, IndividualMain.class);
+
                     startActivity(intent);
 
                 }

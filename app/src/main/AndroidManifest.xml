@@ -25,9 +25,6 @@
             android:name=".IndividualMain"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".VerificationActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity
             android:name=".LoginIndividual"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".NameRollActivity" />
