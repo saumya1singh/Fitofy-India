@@ -27,7 +27,6 @@ Step 2 : Open project in Android Studio
 <img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/45551012/70924233-314f3080-204f-11ea-9240-e6213b6f1af7.png">
 <img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/45551012/70924279-40ce7980-204f-11ea-91db-683412b87847.png">
 <img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/45551012/70924451-855a1500-204f-11ea-8a34-b92656843fbf.png">
-<img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/45551012/70924601-cbaf7400-204f-11ea-8bc5-da7a65d58ebb.png">
 <img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/45551012/70924624-d79b3600-204f-11ea-9436-330745b55891.png">
 <img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/45551012/70924647-e41f8e80-204f-11ea-8d58-97eb5f0089cf.png">
 <img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/45551012/70924710-05807a80-2050-11ea-8cb7-334f4e421d5e.png">
