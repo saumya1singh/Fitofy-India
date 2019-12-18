@@ -17,7 +17,7 @@ Step 2 : Open project in Android Studio
 
 
 
-<picture><img width="250" alt="Screenshot 2019-12-09 at 8 58 27 PM" src="https://user-images.githubusercontent.com/45551012/70923237-94d85e80-204d-11ea-8277-8030284afd5a.png">
+<picture><img width="250" alt="Screenshot 2019-12-09 at 8 58 27 PM" src="https://user-images.githubusercontent.com/45551012/70923237-94d85e80-204d-11ea-8277-8030284afd5a.png" alt="Home Screen" style="float: left; margin-right; 10px;">
 <img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/45551012/70923417-dcf78100-204d-11ea-8fcf-b5130e4a9df0.png">
 <img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/45551012/70923501-fac4e600-204d-11ea-82d5-e9dd4da5ceea.png">
 <img width="250" alt="Screenshot 2019-12-09 at 8 58 59 PM" src="https://user-images.githubusercontent.com/45551012/70923559-0b755c00-204e-11ea-9e7d-e1074df67051.png">
