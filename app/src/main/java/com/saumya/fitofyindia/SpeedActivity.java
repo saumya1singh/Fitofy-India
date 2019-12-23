@@ -1,5 +1,6 @@
 package com.saumya.fitofyindia;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -7,7 +8,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
@@ -15,7 +15,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -47,7 +46,7 @@ public class SpeedActivity extends AppCompatActivity {
     Handler mHandler = new Handler()
     {
         @Override
-        public void handleMessage(Message msg) {
+        public void handleMessage(@NonNull Message msg) {
             super.handleMessage(msg);
             switch (msg.what) {
                 case MSG_START_TIMER:
@@ -56,13 +55,13 @@ public class SpeedActivity extends AppCompatActivity {
                     break;
 
                 case MSG_UPDATE_TIMER:
-                    textViewTimer.setText(""+ timer.getElapsedTimeSecs());
+                    textViewTimer.setText(String.valueOf(timer.getElapsedTimeSecs()));
                     mHandler.sendEmptyMessageDelayed(MSG_UPDATE_TIMER,REFRESH_RATE); //text view is updated every second,
                     break;                                  //though the timer is still running
                 case MSG_STOP_TIMER:
                     mHandler.removeMessages(MSG_UPDATE_TIMER); // no more updates.
                     timer.stop();//stop timer
-                    textViewTimer.setText(""+ timer.getElapsedTimeSecs());
+                    textViewTimer.setText(String.valueOf(timer.getElapsedTimeSecs()));
                     break;
 
                 default:
@@ -122,8 +121,6 @@ public class SpeedActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-               Integer.parseInt(distString);
-
                 distance = Long.parseLong(distString);
 
 
@@ -135,7 +132,7 @@ public class SpeedActivity extends AppCompatActivity {
 
            databaseReference.child(className).child(secName).child(Roll).child("Speed").setValue(speed);
                 textViewSpeed.setVisibility(View.VISIBLE);
-              textViewSpeed.setText("Speed Of " + Name + " Is " + speed + " m/sec" );
+              textViewSpeed.setText(String.format("Speed Of %s Is %s m/sec", Name, speed));
                 buttonStopTimer.setVisibility(View.GONE);
                 buttonStartTimer.setVisibility(View.VISIBLE);
             }
@@ -143,7 +140,7 @@ public class SpeedActivity extends AppCompatActivity {
 
     }
     private boolean checkValid() {
-        Boolean check =true;
+        boolean check =true;
         if(TextUtils.isEmpty(distString))
         {
             editTextDistance.setError("Required");

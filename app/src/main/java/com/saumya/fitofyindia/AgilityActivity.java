@@ -1,5 +1,6 @@
 package com.saumya.fitofyindia;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -45,7 +46,7 @@ public class AgilityActivity extends AppCompatActivity {
     Handler mHandler = new Handler()
     {
         @Override
-        public void handleMessage(Message msg) {
+        public void handleMessage(@NonNull Message msg) {
             super.handleMessage(msg);
             switch (msg.what) {
                 case MSG_START_TIMER:
@@ -54,13 +55,13 @@ public class AgilityActivity extends AppCompatActivity {
                     break;
 
                 case MSG_UPDATE_TIMER:
-                    textViewTimer.setText(""+ timer.getElapsedTimeSecs());
+                    textViewTimer.setText(String.valueOf(timer.getElapsedTimeSecs()));
                     mHandler.sendEmptyMessageDelayed(MSG_UPDATE_TIMER,REFRESH_RATE); //text view is updated every second,
                     break;                                  //though the timer is still running
                 case MSG_STOP_TIMER:
                     mHandler.removeMessages(MSG_UPDATE_TIMER); // no more updates.
                     timer.stop();//stop timer
-                    textViewTimer.setText(""+ timer.getElapsedTimeSecs());
+                    textViewTimer.setText(String.valueOf(timer.getElapsedTimeSecs()));
                     break;
 
                 default:
@@ -122,8 +123,6 @@ public class AgilityActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Integer.parseInt(distString);
-
                 distance = Long.parseLong(distString);
 
 
@@ -135,7 +134,7 @@ public class AgilityActivity extends AppCompatActivity {
 
                 databaseReference.child(className).child(secName).child(Roll).child("Agility").setValue(time);
                 textViewSpeed.setVisibility(View.VISIBLE);
-                textViewSpeed.setText("Obstracle  completed by" + Name + " In " + time +"sec" );
+                textViewSpeed.setText(String.format("Obstracle  completed by %s In %s sec", Name, time));
                 buttonStopTimer.setVisibility(View.GONE);
                 buttonStartTimer.setVisibility(View.VISIBLE);
             }
@@ -143,7 +142,7 @@ public class AgilityActivity extends AppCompatActivity {
 
     }
     private boolean checkValid() {
-        Boolean check =true;
+        boolean check = true;
         if(TextUtils.isEmpty(distString))
         {
             editTextDistance.setError("Required");

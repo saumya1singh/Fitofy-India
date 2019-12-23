@@ -86,7 +86,7 @@ public class YogaEditWork extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sumworkout+=1;
-                workvalue.setText(sumworkout+"");
+                workvalue.setText(String.valueOf(sumworkout));
             }
         });
 
@@ -97,7 +97,7 @@ public class YogaEditWork extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Sorry!", Toast.LENGTH_SHORT).show();
                 } else {
                     sumworkout-=1;
-                    workvalue.setText(sumworkout+"");
+                    workvalue.setText(String.valueOf(sumworkout));
                 }
             }
         });

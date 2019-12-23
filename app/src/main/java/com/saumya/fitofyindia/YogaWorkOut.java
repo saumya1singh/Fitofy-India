@@ -43,13 +43,13 @@ public class YogaWorkOut extends AppCompatActivity {
 //        Typeface MMedium = Typeface.createFromAsset(getAssets(), "fonts/MMedium.ttf");
 //        Typeface Vidaloka = Typeface.createFromAsset(getAssets(), "fonts/Vidaloka.ttf");
 
-        titlepage = (TextView) findViewById(R.id.titlepage);
-        subtitlepage = (TextView) findViewById(R.id.subtitlepage);
-        intropage = (TextView) findViewById(R.id.intropage);
-        subintropage = (TextView) findViewById(R.id.subintropage);
-        btnexercise = (TextView) findViewById(R.id.btnexercise);
-        divpage = (View) findViewById(R.id.divpage);
-        bgprogress = (View) findViewById(R.id.bgprogress);
+        titlepage = findViewById(R.id.titlepage);
+        subtitlepage = findViewById(R.id.subtitlepage);
+        intropage = findViewById(R.id.intropage);
+        subintropage = findViewById(R.id.subintropage);
+        btnexercise = findViewById(R.id.btnexercise);
+        divpage = findViewById(R.id.divpage);
+        bgprogress = findViewById(R.id.bgprogress);
 
 
         // give an event to another page
@@ -63,26 +63,26 @@ public class YogaWorkOut extends AppCompatActivity {
         });
 
         // item fit layout
-        fitone = (LinearLayout) findViewById(R.id.fitone);
-        fittwo = (LinearLayout) findViewById(R.id.fittwo);
-        fitthree = (LinearLayout) findViewById(R.id.fitthree);
-        fitfour = (LinearLayout) findViewById(R.id.fitfour);
+        fitone = findViewById(R.id.fitone);
+        fittwo = findViewById(R.id.fittwo);
+        fitthree = findViewById(R.id.fitthree);
+        fitfour = findViewById(R.id.fitfour);
 
 
 
 
         // item fit
-        fitonetitle = (TextView) findViewById(R.id.fitonetitle);
-        fitonedesc = (TextView) findViewById(R.id.fitonedesc);
+        fitonetitle = findViewById(R.id.fitonetitle);
+        fitonedesc = findViewById(R.id.fitonedesc);
 
-        fittwotitle = (TextView) findViewById(R.id.fittwotitle);
-        fittwodesc = (TextView) findViewById(R.id.fittwodesc);
+        fittwotitle = findViewById(R.id.fittwotitle);
+        fittwodesc = findViewById(R.id.fittwodesc);
 
-        fitthreetitle = (TextView) findViewById(R.id.fitthreetitle);
-        fitthreedesc = (TextView) findViewById(R.id.fitthreedesc);
+        fitthreetitle = findViewById(R.id.fitthreetitle);
+        fitthreedesc = findViewById(R.id.fitthreedesc);
 
-        fitfourtitle = (TextView) findViewById(R.id.fitfourtitle);
-        fitfourdesc = (TextView) findViewById(R.id.fitfourdesc);
+        fitfourtitle = findViewById(R.id.fitfourtitle);
+        fitfourdesc = findViewById(R.id.fitfourdesc);
 
         // customize font
 //        titlepage.setTypeface(Vidaloka);

@@ -30,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
 
 
-    DatabaseReference databaseReference;
+    // DatabaseReference databaseReference;
     FirebaseDatabase firebaseDatabase;
 
 
