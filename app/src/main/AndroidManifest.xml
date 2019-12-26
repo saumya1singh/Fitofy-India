@@ -58,6 +58,8 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".Healthtip"
         android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Weight_loss"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".CounterActivity"
         android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".GymMainActivity"
