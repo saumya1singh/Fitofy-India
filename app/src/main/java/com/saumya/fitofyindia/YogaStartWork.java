@@ -4,16 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer;
+// import android.os.CountDownTimer;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+// import android.widget.Toast;
 
-import java.util.Locale;
+// import java.util.Locale;
 
 public class YogaStartWork extends AppCompatActivity {
 
@@ -23,10 +23,10 @@ public class YogaStartWork extends AppCompatActivity {
     ImageView imgtimer;
     LinearLayout fitone;
 
-    private static final long START_TIME_IN_MILLIS = 800000;
+    /* private static final long START_TIME_IN_MILLIS = 800000;
     private CountDownTimer countDownTimer;
     private boolean mTimerRunning;
-    private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
+    private long mTimeLeftInMillis = START_TIME_IN_MILLIS; */
 
     Animation btthree, bttfour, ttbone, ttbtwo, alphagogo;
 
@@ -52,18 +52,18 @@ public class YogaStartWork extends AppCompatActivity {
 //        Typeface Vidaloka = Typeface.createFromAsset(getAssets(), "fonts/Vidaloka.ttf");
 
 
-        intropage = (TextView) findViewById(R.id.intropage);
-        subintropage = (TextView) findViewById(R.id.subintropage);
-        btnexercise = (TextView) findViewById(R.id.btnexercise);
-        fitonetitle = (TextView) findViewById(R.id.fitonetitle);
-        fitonedesc = (TextView) findViewById(R.id.fitonedesc);
-        timerValue = (TextView) findViewById(R.id.timerValue);
-        btnexercise = (TextView) findViewById(R.id.btnexercise);
+        intropage = findViewById(R.id.intropage);
+        subintropage = findViewById(R.id.subintropage);
+        btnexercise = findViewById(R.id.btnexercise);
+        fitonetitle = findViewById(R.id.fitonetitle);
+        fitonedesc = findViewById(R.id.fitonedesc);
+        timerValue = findViewById(R.id.timerValue);
+        btnexercise = findViewById(R.id.btnexercise);
 
-        divpage = (View) findViewById(R.id.divpage);
-        bgprogress = (View) findViewById(R.id.bgprogress);
-        fitone = (LinearLayout) findViewById(R.id.fitone);
-        imgtimer = (ImageView) findViewById(R.id.imgtimer);
+        divpage = findViewById(R.id.divpage);
+        bgprogress = findViewById(R.id.bgprogress);
+        fitone = findViewById(R.id.fitone);
+        imgtimer = findViewById(R.id.imgtimer);
 
         // change customize font
 //        intropage.setTypeface(Vidaloka);
@@ -98,7 +98,7 @@ public class YogaStartWork extends AppCompatActivity {
     }
 
     private void startTimer(){
-        countDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
+        /* countDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 mTimeLeftInMillis = millisUntilFinished;
@@ -110,14 +110,14 @@ public class YogaStartWork extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Congratulations!", Toast.LENGTH_SHORT).show();
             }
         }.start();
-        mTimerRunning = true;
+        mTimerRunning = true; */
     }
 
-    private void updateCountDowntText(){
+    /* private void updateCountDowntText(){
         int minutes = (int) (mTimeLeftInMillis / 1000) / 60;
         int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
 
         String timeLeft = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
         timerValue.setText(timeLeft);
-    }
+    } */
 }

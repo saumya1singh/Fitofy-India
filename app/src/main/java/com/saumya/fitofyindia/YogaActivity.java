@@ -36,12 +36,12 @@ public class YogaActivity extends AppCompatActivity {
         Typeface Vidaloka = Typeface.createFromAsset(getAssets(), "fonts/Vidaloka.ttf");*/
 
 
-        titlepage = (TextView) findViewById(R.id.titlepage);
-        subtitlepage = (TextView) findViewById(R.id.subtitlepage);
-        btnexercise = (TextView) findViewById(R.id.btnexercis);
-        imgpage = (ImageView) findViewById(R.id.imgpage);
-        bgprogress = (View) findViewById(R.id.bgprogress);
-        bgprogresstop = (View) findViewById(R.id.bgprogresstop);
+        titlepage = findViewById(R.id.titlepage);
+        subtitlepage = findViewById(R.id.subtitlepage);
+        btnexercise = findViewById(R.id.btnexercis);
+        imgpage = findViewById(R.id.imgpage);
+        bgprogress = findViewById(R.id.bgprogress);
+        bgprogresstop = findViewById(R.id.bgprogresstop);
 
         // export animate
         imgpage.startAnimation(animimgpage);

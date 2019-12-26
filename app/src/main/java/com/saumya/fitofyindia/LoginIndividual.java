@@ -6,15 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
+// import android.widget.TextView;
 
 public class LoginIndividual extends AppCompatActivity {
-    TextView tvMessage;
+    // TextView tvMessage;
     EditText etPhone,etName;
     String phonenumber, name;
     Button btnNext;
@@ -43,7 +40,7 @@ public class LoginIndividual extends AppCompatActivity {
         });
     }
     private boolean checkValid() {
-        Boolean check =true;
+        boolean check =true;
         if(TextUtils.isEmpty(phonenumber))
         {
             etPhone.setError("Required");

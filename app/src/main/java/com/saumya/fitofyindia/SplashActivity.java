@@ -18,8 +18,8 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        bgone = (ImageView) findViewById(R.id.bgone);
-        btnget = (Button) findViewById(R.id.btnget);
+        bgone = findViewById(R.id.bgone);
+        btnget = findViewById(R.id.btnget);
 
         bgone.animate().scaleX(2).scaleY(2).setDuration(5000).start();
 

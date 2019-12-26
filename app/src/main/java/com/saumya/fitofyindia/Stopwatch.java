@@ -13,14 +13,14 @@ public class Stopwatch {
     }
 
 
-    public void stop() {
+    void stop() {
         this.stopTime = System.currentTimeMillis();
         this.running = false;
     }
 
 
     // elaspsed time in milliseconds
-    public long getElapsedTime() {
+    private long getElapsedTime() {
         if (running) {
             return System.currentTimeMillis() - startTime;
         }
@@ -29,7 +29,7 @@ public class Stopwatch {
 
 
     // elaspsed time in seconds
-    public long getElapsedTimeSecs() {
+    long getElapsedTimeSecs() {
         if (running) {
             return ((System.currentTimeMillis() - startTime) / 1000);
         }

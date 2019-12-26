@@ -28,8 +28,8 @@ public class ClassSectionActivity extends AppCompatActivity {
     Spinner spinnerClass , spinnerSec;
     String className, secName;
 
-    List<String> ClassList = new ArrayList<String>();
-    List<String> SecList = new ArrayList<String>();
+    List<String> ClassList = new ArrayList<>();
+    List<String> SecList = new ArrayList<>();
     SharedPreferences sharedPreferences;
 
     String organisation;
@@ -74,8 +74,8 @@ public class ClassSectionActivity extends AppCompatActivity {
 
 
 
-        ArrayAdapter<String> dataClassAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,ClassList );
-        ArrayAdapter<String> dataSecAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, SecList);
+        ArrayAdapter<String> dataClassAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,ClassList );
+        ArrayAdapter<String> dataSecAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, SecList);
 
         dataClassAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         dataSecAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -140,7 +140,7 @@ public class ClassSectionActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(className)) {
             TextView errorText = (TextView) spinnerClass.getSelectedView();
             errorText.setError("");
-            errorText.setText("Required");//changes the selected item text to this
+            errorText.setText(getResources().getString(R.string.reqd));//changes the selected item text to this
 
             check = false;
         }
@@ -148,7 +148,7 @@ public class ClassSectionActivity extends AppCompatActivity {
 
             TextView errorText = (TextView) spinnerClass.getSelectedView();
             errorText.setError("");
-            errorText.setText("Required");//changes the selected item text to this
+            errorText.setText(getResources().getString(R.string.reqd));//changes the selected item text to this
 
             check = false;
         }
