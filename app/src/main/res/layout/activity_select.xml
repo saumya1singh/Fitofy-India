@@ -28,29 +28,29 @@
         android:text="Login As ? " />
 
     <Button
+        android:id="@+id/btnIndividual"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/lightorange"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:gravity="center"
+        android:text="Individual"
+        android:textSize="@dimen/normal_text"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/btnOrganisation"
         android:layout_width="251dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:gravity="center"
         android:background="@color/lightorange"
-        android:text="Organisation"
         android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:gravity="center"
+        android:text="Organisation"
         android:textSize="@dimen/normal_text"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnIndividual"
-        android:layout_width="245dp"
-        android:textSize="@dimen/normal_text"
-        android:layout_marginTop="20dp"
-        android:drawableLeft="@drawable/ic_person_black_24dp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@color/lightorange"
-        android:gravity="center"
-        android:text="Individual" />
 
 </LinearLayout>
