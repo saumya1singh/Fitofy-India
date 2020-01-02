@@ -18,8 +18,9 @@ public class CounterActivity extends AppCompatActivity implements SensorEventLis
     TextView steps;
 
     SensorManager sensorManager;
+    Sensor count;
 
-    boolean run = false;
+    boolean isSensorPresent = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,34 +29,38 @@ public class CounterActivity extends AppCompatActivity implements SensorEventLis
         steps = findViewById(R.id.steps);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
-
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        run = true;
-        Sensor count = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
+
+        count = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
 
         if (count!=null){
+            isSensorPresent = true;
             sensorManager.registerListener(this,count,SensorManager.SENSOR_DELAY_UI);
 
         }else
         {
             Toast.makeText(this, "Did not found any step sensor in your phone", Toast.LENGTH_SHORT).show();
+            isSensorPresent = false;
         }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        run =false;
+        if (isSensorPresent){
+            sensorManager.unregisterListener(this);
+            isSensorPresent =false;
+        }
     }
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
 
-        if (run){
+        if (isSensorPresent){
             steps.setText(String.valueOf(sensorEvent.values[0]));
         }
 
@@ -66,3 +71,4 @@ public class CounterActivity extends AppCompatActivity implements SensorEventLis
 
     }
 }
+
