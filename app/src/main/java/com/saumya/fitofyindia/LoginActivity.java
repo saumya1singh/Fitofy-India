@@ -49,6 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                                     {
                                         Log.d("tag", "signInWithEmail:success");
                                         Intent i = new Intent(getBaseContext(), AfterLogin.class);
+                                        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
                                         startActivity(i);
 
                                         finish();
