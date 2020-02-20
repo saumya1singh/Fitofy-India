@@ -21,6 +21,7 @@
         android:id="@+id/etOrganisation"
         android:layout_width="match_parent"
         android:layout_marginTop="20dp"
+        android:drawablePadding="8dp"
         android:layout_height="wrap_content"
          android:drawableLeft="@drawable/ic_home_black_24dp"
         android:inputType="textEmailAddress"
@@ -30,6 +31,7 @@
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
         android:drawableLeft="@drawable/ic_email_black_24dp"
         android:inputType="textEmailAddress"
         android:hint="E-mail" />
@@ -40,6 +42,7 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_security_black_24dp"
         android:inputType="numberPassword"
+        android:drawablePadding="8dp"
         android:hint="Password (*more than 6 digits)" />
 
     <Button

@@ -22,6 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="16dp"
+        android:paddingLeft="8dp"
         android:inputType="textEmailAddress"
         android:hint="E-Mail" />
 
@@ -30,6 +32,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_security_black_24dp"
+        android:drawablePadding="16dp"
+        android:paddingLeft="8dp"
         android:inputType="numberPassword"
         android:hint="Password" />
 

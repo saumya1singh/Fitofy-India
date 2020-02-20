@@ -29,6 +29,7 @@
         android:drawableLeft="@drawable/ic_person_black_24dp"
         android:ems="10"
         android:gravity=""
+        android:drawablePadding="8dp"
         android:hint="Student name"
         android:inputType="textPersonName" />
 
@@ -40,6 +41,7 @@
 
         android:drawableLeft="@drawable/ic_format_list_numbered_black_24dp"
         android:ems="10"
+        android:drawablePadding="8dp"
         android:hint="Roll No."
         android:inputType="number" />
 

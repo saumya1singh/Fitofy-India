@@ -36,6 +36,7 @@
         android:background="@color/lightorange"
         android:drawableLeft="@drawable/ic_person_black_24dp"
         android:gravity="center"
+        android:paddingLeft="8dp"
         android:text="Individual"
         android:textSize="@dimen/normal_text"
         android:textStyle="bold" />
@@ -46,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
+        android:paddingLeft="8dp"
         android:background="@color/lightorange"
         android:drawableLeft="@drawable/ic_home_black_24dp"
         android:gravity="center"

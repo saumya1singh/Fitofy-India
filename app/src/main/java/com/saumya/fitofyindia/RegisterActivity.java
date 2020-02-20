@@ -71,6 +71,7 @@ public class RegisterActivity extends AppCompatActivity {
                                         Log.d("tag", "createUserWithEmail:success");
 
                                         Intent intent = new Intent(RegisterActivity.this, AfterLogin.class);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
                                         startActivity(intent);
                                         finish();
                                     } else {

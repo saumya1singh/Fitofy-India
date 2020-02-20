@@ -26,8 +26,8 @@ public class SplashActivity extends AppCompatActivity {
         btnget.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent a = new Intent(SplashActivity.this, OnboardingActivity.class);
+                a.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(a);
             }
         });
