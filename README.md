@@ -25,5 +25,5 @@ We are always here to help you out and get started . </br>
 Please read our Contributing guidelines [here](https://github.com/SaumyaSingh1/Fitofy-India/blob/master/CONTRIBUTING.md) to get started 💯
 
 # Contact
-For more discussion on the project, You can join Slack Channel [here](fitofy-saumyasingh.slack.com).
+For more discussion on the project, You can join Slack Channel [here](https://join.slack.com/t/fitofy-saumyasingh/shared_invite/enQtOTU0OTQ0NzQ1MzYxLTljYjVmOGZhMDU4Y2I3MTAxYzkwNGU3ZWIyYTc2MjE5MWE5MTU5MmM1YjJhZmNlYTQxNmQyNGUxOWZkMzFlMmQ).
 
