@@ -25,5 +25,5 @@ We are always here to help you out and get started . </br>
 Please read our Contributing guidelines [here](https://github.com/SaumyaSingh1/Fitofy-India/blob/master/CONTRIBUTING.md) to get started 💯
 
 # Contact
-You can reach maintainers team [here](https://groups.google.com/d/forum/fitofy-india).
+You can reach maintainers team [here](fitofy-saumyasingh.slack.com).
 
