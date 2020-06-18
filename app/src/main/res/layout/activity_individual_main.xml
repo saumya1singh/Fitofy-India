@@ -42,16 +42,15 @@
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:layout_marginTop="50dp"
-
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_weight="5"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-
-
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="6dp"
             app:cardElevation="10dp">
 
@@ -62,10 +61,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:id="@+id/yoga"
-
-
                 android:orientation="vertical">
-
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -91,10 +87,12 @@
 
 
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="0dp"
+            android:layout_weight="5"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
 
             app:cardCornerRadius="6dp"
             app:cardElevation="10dp">
@@ -142,10 +140,12 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="0dp"
+            android:layout_weight="5"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="6dp"
             app:cardElevation="10dp">
 
@@ -185,10 +185,12 @@
 
 
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="0dp"
+            android:layout_weight="5"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
 
             app:cardCornerRadius="6dp"
             app:cardElevation="10dp">
